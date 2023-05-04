@@ -1,0 +1,39 @@
+Note:You can create the below Azure Resources using the powershell code & Azure CLI or you can create resources using Auzre Cloud GUI on the website. 
+
+To use Azure CLI you need to first Authenticate yourself using below code:-
+## Login AZ Accounts
+az login --use-device-code
+
+
+1) Create Resource Group
+$LOCATION='eastus'
+$RESOURCE_GROUP_NAME='mri_project_rg'
+
+# Create a resource group
+az group create `
+    --location $LOCATION `
+    --name $RESOURCE_GROUP_NAME
+2)Create Key Vault
+
+3)Create Storage Account
+
+4) Create App Service Plan
+$APP_SERVICE_PLAN_NAME='mri-predict-plan'
+
+az appservice plan create `
+    --name $APP_SERVICE_PLAN_NAME `
+    --resource-group $RESOURCE_GROUP_NAME `
+    --sku B1 `
+    --is-linux
+
+5)Create Virtual Network 
+
+6)Create Firewall and setup Firewall policy
+
+7)Create Workspace
+
+8)Create Container Registry
+
+9)Create different App Services as per your need 
+
+10)Create Application Insights
