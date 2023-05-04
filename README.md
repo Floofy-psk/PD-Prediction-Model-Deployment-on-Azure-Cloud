@@ -7,7 +7,7 @@ To deploy the model, please follow these steps:
 
 1)Create an Azure Cloud account and create the resources mentioned in the "Azure_create_resources.txt" file in the repo.
 
-2)Train the model and save it. Copy and paste this saved model file into the "Endpoint/Trained_Model/" directory.
+2)Train the model and save it. Copy and paste this saved model file(my_model.h5 file) into the "Endpoint/Trained_Model/" directory.
 
 3)Using the Dockerfile present in the "Endpoint" and "WEBAPP" directories, create the Docker image. Push this Docker image to the Azure Container Registry using the command below, replacing "mriprojectcontainerregistry" with the name of the container register you created in Azure.
 
