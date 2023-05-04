@@ -13,7 +13,7 @@ To deploy the model, please follow these steps:
 
 `docker push mriprojectcontainerregistry.azurecr.io/webapp`
 
-4)In the last step, deploy this Docker image from the Azure Container Registry on a Linux Virtual Machine using Azure App Service.
+4)In the last step, deploy this Docker image from the Azure Container Registry on a Linux Virtual Machine on Azure CLoud using Azure App Service.
 
 5)You can find the public URL to access this web app in the Azure App Service.
 
