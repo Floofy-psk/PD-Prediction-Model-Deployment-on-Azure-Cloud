@@ -1,5 +1,5 @@
 # ML-Azure-Cloud-Model
-All around the world, doctors use MRI images to predict diseases that a patient may be suffering from. For example, they may use this technology to determine if a person has a brain tumor or if they are suffering from Parkinson's disease. Making these predictions requires a great deal of knowledge and experience. To improve the accuracy of these predictions, we can use a deep learning model that is faster and more accurate.
+All around the world, doctors rely on MRI images to make predictions about diseases that patients may be suffering from. For instance, they may use this technology to determine if a patient has a brain tumor or Parkinson's disease. These predictions require a considerable amount of knowledge and experience. To enhance the accuracy of these predictions, we can leverage a deep learning model that is faster and more precise. The purpose of our model here used is to predict whether a person has Parkinson's disease or not.
 
 The goal of this project is to deploy this model on the cloud using Azure Cloud (Free Tier Account). This repository provides the code to deploy a deep learning model to Azure Cloud Services.
 
