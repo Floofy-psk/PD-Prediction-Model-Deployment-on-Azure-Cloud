@@ -17,4 +17,3 @@ To deploy the model, please follow these steps:
 
 5)You can find the public URL to access this web app in the Azure App Service.
 
-Thank you for using this repository, and we hope it helps you deploy your deep learning model to the cloud successfully.
