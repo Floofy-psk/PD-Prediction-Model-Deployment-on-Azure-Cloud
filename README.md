@@ -1,19 +1,42 @@
-# ML-Azure-Cloud-Model
-All around the world, doctors rely on MRI images to make predictions about diseases that patients may be suffering from. For instance, they may use this technology to determine if a patient has a brain tumor or Parkinson's disease. These predictions require a considerable amount of knowledge and experience. To enhance the accuracy of these predictions, we can leverage a deep learning model that is faster and more precise. The purpose of our model here used is to predict whether a person has Parkinson's disease or not.
+# Parkinson's Disease Prediction Model Deployment on Azure Cloud
 
-The goal of this project is to deploy this model on the cloud using Azure Cloud (Free Tier Account). This repository provides the code to deploy a deep learning model to Azure Cloud Services.
+## Overview
 
-To deploy the model, please follow these steps:
+This project aims to deploy a deep learning model for predicting Parkinson's disease using MRI images on Azure Cloud Services. Physicians worldwide use MRI images for disease diagnosis, and leveraging deep learning models can enhance the accuracy and speed of predictions. The deployed model allows users to determine whether a person has Parkinson's disease or not. Below are the steps to deploy this model on Azure Cloud using a Free Tier Account.
 
-1)Create an Azure Cloud account and create the resources mentioned in the "Azure_create_resources.txt" file in the repo.
+## Deployment Steps
 
-2)Train the model and save it. Copy and paste this saved model file(my_model.h5 file) into the "Endpoint/Trained_Model/" directory.
+### 1. Create an Azure Cloud Account and Resources
 
-3)Using the Dockerfile present in the "Endpoint" and "WEBAPP" directories, create the Docker image. Push this Docker image to the Azure Container Registry using the command below, replacing "mriprojectcontainerregistry" with the name of the container register you created in Azure.
+- Sign up for an Azure Cloud account if you don't have one.
+- Use the "Azure_create_resources.txt" file in the repository to create the necessary Azure resources. These resources typically include a virtual machine, Azure Container Registry, and Azure App Service.
 
-`docker push mriprojectcontainerregistry.azurecr.io/webapp`
+### 2. Train and Save the Model
 
-4)In the last step, deploy this Docker image from the Azure Container Registry on a Linux Virtual Machine on Azure CLoud using Azure App Service.
+- Train your deep learning model using MRI image data and save the trained model file. Ensure that you save the model file (e.g., `my_model.h5`) into the "Endpoint/Trained_Model/" directory.
 
-5)You can find the public URL to access this web app in the Azure App Service.
+### 3. Docker Image Creation
 
+- Use the provided Dockerfile in both the "Endpoint" and "WEBAPP" directories to create Docker images for the model and web app.
+- Build the Docker images using the `docker build` command.
+- Push the Docker images to the Azure Container Registry using the following command (replace `mriprojectcontainerregistry` with your Azure Container Registry name):
+
+```bash
+docker push mriprojectcontainerregistry.azurecr.io/webapp
+```
+
+### 4. Deploy Docker Image on Azure Cloud
+
+- Deploy the Docker image from the Azure Container Registry onto a Linux Virtual Machine on Azure Cloud using Azure App Service.
+- Configure the necessary settings and environment variables for the deployed web app.
+
+### 5. Access the Web App
+
+- After successful deployment, you will receive a public URL to access the web app hosted on Azure App Service.
+- Users can now visit this URL to use the model for predicting Parkinson's disease based on MRI images.
+
+## Conclusion
+
+This project demonstrates how to deploy a deep learning model for Parkinson's disease prediction using MRI images on Azure Cloud Services. By following the outlined steps, you can create Azure resources, train and save your model, containerize it using Docker, and deploy it on Azure App Service. This allows for efficient and accessible disease prediction, benefiting both medical professionals and patients.
+
+Please note that this is a simplified readme, and the actual deployment process may require more detailed instructions depending on the specific Azure services and configurations used. Additionally, consider security and compliance requirements when handling medical data and deploying healthcare-related applications.
