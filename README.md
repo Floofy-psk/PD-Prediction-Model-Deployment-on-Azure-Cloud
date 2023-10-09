@@ -35,6 +35,12 @@ docker push mriprojectcontainerregistry.azurecr.io/webapp
 - After successful deployment, you will receive a public URL to access the web app hosted on Azure App Service.
 - Users can now visit this URL to use the model for predicting Parkinson's disease based on MRI images.
 
+## Azure Architecture
+![image](https://github.com/abhi-sama/PD-Prediction-Model-Deployment-on-Azure-Cloud/assets/129358937/352303f2-8359-47ea-a63f-6b7ff51ac3fc)
+
+## Web App
+![MRI_browse](https://github.com/abhi-sama/PD-Prediction-Model-Deployment-on-Azure-Cloud/assets/129358937/6bcfa799-2f29-45ed-8462-8616ec4cc272)
+
 ## Conclusion
 
 This project demonstrates how to deploy a deep learning model for Parkinson's disease prediction using MRI images on Azure Cloud Services. By following the outlined steps, you can create Azure resources, train and save your model, containerize it using Docker, and deploy it on Azure App Service. This allows for efficient and accessible disease prediction, benefiting both medical professionals and patients.
