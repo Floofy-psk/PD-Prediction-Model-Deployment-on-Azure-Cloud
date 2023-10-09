@@ -38,7 +38,7 @@ docker push mriprojectcontainerregistry.azurecr.io/webapp
 ## Azure Architecture
 ![image](https://github.com/abhi-sama/PD-Prediction-Model-Deployment-on-Azure-Cloud/assets/129358937/352303f2-8359-47ea-a63f-6b7ff51ac3fc)
 
-## Web App
+## Web App Demo
 ![MRI_browse](https://github.com/abhi-sama/PD-Prediction-Model-Deployment-on-Azure-Cloud/assets/129358937/6bcfa799-2f29-45ed-8462-8616ec4cc272)
 
 ## Conclusion
